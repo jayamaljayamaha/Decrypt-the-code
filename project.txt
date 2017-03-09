@@ -1,0 +1,65 @@
+project 1
+
+Research team’s enemy
+
+When users transfer data/information through a network, there is a risk that a third party may dragged it and read it or change it. So there is a problem with of the security of the data/information that are transmitted through a network. So the concept of data encryption comes to the picture. It is very interesting piece of technology that works by scrambling data before sending. It protects our data whether it is video, voice or text from malicious attacks and competitors. It protects our conversations. In other case it protects our lives.
+
+Suppose A wants to sends a message to B. Before sending the message A encrypted it. Assume here is the encrypted message;
+
+“ZOBicBVjlVfgmQ9VpFzSwzLLODh”
+
+When B receives this, he decrypt it and find the original message.
+
+“Hello! Let’s meet tomorrow”
+
+You are a member of a research team of 3 members in XYZ laboratory. As you all are busy, you all guarantee to send messages among the team members briefly using less than or equal 20 characters. But you and your team members are suffering from difficulties since a member in another research team always try to drag your data while your members are sending messages. So you are asked to make a program to decrypt the message according to Symmetric encryption.
+
+In symmetric encryption, the key is added to all the characters in the message and creates the encrypted message.
+
+http://www.pearsonitcertification.com/articles/article.aspx?p=1680706
+
+ 
+
+Sample input:
+
+Fmfoqibou
+
+1
+
+Sample output:
+
+Elephant
+
+ 
+
+Here the first input is the encrypted message and second input is the key. All the characters of encrypted message are reversed by one character and got the original message.
+
+Important thing is if one of the characters is ‘ ’ (space - 32) and when it reversed by one the output is ‘~’ (126).
+
+ 
+
+Help :
+
+Here to you have to scan the encrypted message input by user. So for that use,
+
+char encryptedMsg [20];
+
+scan(“%s”,&encryptedMsg );
+
+Here all the characters of the message is assigned to set of characters named encryptedMsg[0], encryptedMsg[1],………. encryptedMsg[k]; k is the total number of characters -1
+
+Assume the message is dgasgsdg65RGY, and you want to access
+
+‘a’, use this notation encryptedMsg[2],
+
+Eg: if you want to print ‘R’ in above message write printf(“%c”, encryptedMsg[10]);
+
+Likewise you can access any i th <= k+1 character using encryptedMsg[i]
+
+ 
+
+http://www.boekhoff.info/?pid=data&dat=ascii-codes&show=95
+
+ 
+
+ 
